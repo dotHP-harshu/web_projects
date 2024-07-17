@@ -1,0 +1,170 @@
+.submit-msg {
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 100%;
+    z-index: 20;
+    background-color: var(--primary-color);
+    color: var(--universal-color);
+    font: 20px arsenal sc;
+    font-weight: 400;
+    padding: 5px 20px;
+    letter-spacing: 1px;
+    display: none;
+}
+
+
+/* CONTACT INFORMATION STARTS HERE  */
+
+#contact {
+    display: flex;
+    width: 100%;
+    border-top: 1px solid var(--universal-color);
+    letter-spacing: 1px;
+    color: var(--primary-color);
+}
+
+.contact-info,
+.contact-links {
+    width: 50%;
+    padding: 2em;
+}
+
+.contact-info h4,
+.contact-links h4 {
+    font: 22px jost;
+    margin: 15px 10px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+/* .contact-links a {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    margin: 0 10px;
+    text-align: center;
+} */
+
+.contact-links a i {
+    padding: 10px;
+    font-size: 40px;
+    color: var(--primary-color);
+}
+
+.contact-links a i:hover {
+    background-color: var(--primary-color);
+    color: var(--universal-color);
+}
+
+.contact-info p {
+    font: 20px roboto slab;
+    font-weight: 400;
+    margin: 5px 20px;
+}
+
+
+/* CONTACT INFORMATION ENDS HERE  */
+
+#form-map {
+    min-height: 70vmin;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: var(--primary-color);
+}
+
+
+/* FORM CSS STARTS HERE  */
+
+.form {
+    height: 100%;
+    width: 50%;
+    background-color: var(--primary-color);
+    color: var(--universal-color);
+    display: flex;
+    flex-direction: column;
+    padding: 4em;
+}
+
+.form h3 {
+    font: 2rem jost;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+.form form {
+    padding: 2em 5em;
+}
+
+.form form label {
+    display: block;
+    margin-top: 15px;
+    font: 18px arsenal sc;
+}
+
+.form form input,
+.form form textarea {
+    display: block;
+    font: 20px roboto slab;
+    font-weight: 200;
+    width: 80%;
+    height: 40px;
+    padding: 3px 8px;
+    background-color: var(--primary-color);
+    color: var(--universal-color);
+    letter-spacing: 1px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--universal-color);
+}
+
+.form form textarea {
+    resize: none;
+    height: 60px;
+}
+
+.form form input::placeholder,
+.form form textarea::placeholder {
+    font: 20px roboto slab;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 100;
+}
+
+#submit-btn {
+    font: 20px jost;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    width: 200px;
+}
+
+#submit-btn:hover {
+    color: var(--primary-color);
+    background-color: var(--universal-color);
+}
+
+
+/* FORM CSS ENDS HERE  */
+
+
+/* MAP STARTS HERE  */
+
+.map {
+    height: 70vmin;
+    border: 1px solid var(--primary-color);
+    width: 50%;
+    padding: 20px;
+}
+
+.map iframe {
+    height: 100%;
+    width: 100%;
+}
+
+
+/* MAP ENDS HERE  */

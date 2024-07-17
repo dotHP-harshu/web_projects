@@ -1,0 +1,325 @@
+/* VARIABLES */
+
+:root {
+    --primary-color: #0c9e0c;
+    --secondary-color: rgb(148, 35, 35);
+    --universal-color: white;
+}
+
+
+/* CSS RESET  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* BODY CSS STYLE  */
+
+body {
+    width: 100%;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+    background-color: var(--primary-color);
+    border-radius: 50px;
+}
+
+body::-webkit-scrollbar-thumb {
+    width: 10px;
+    background-color: var(--universal-color);
+    border-radius: 50px;
+    border: 0.5px solid var(--primary-color);
+}
+
+
+/* BODY CSS STYLE  */
+
+
+/* HEADER STATS  */
+
+header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+
+/* NAV STARTS */
+
+nav {
+    background-color: var(--universal-color);
+    height: 60px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+#nav-left {
+    width: 25%;
+    height: 100%;
+}
+
+#nav-left a {
+    text-decoration: none;
+    font-size: 0;
+}
+
+#nav-left img {
+    display: block;
+    margin: 0 auto;
+    height: 120%;
+    width: auto;
+}
+
+#nav-right {
+    width: 75%;
+    height: 100%;
+    padding: 10px;
+}
+
+#nav-right i {
+    display: none;
+}
+
+#nav-right ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 20px;
+}
+
+#nav-right ul li {
+    list-style: none;
+    margin: 0 10px;
+    padding: 0 10px;
+}
+
+#nav-right ul li a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 18px;
+    transition: all 0.5s;
+    font-family: arsenal sc;
+}
+
+#nav-right ul li a:hover,
+#nav-right ul li a:focus {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+
+/* HERO SECTION  */
+
+#hero {
+    background: url(../assets/images/background-1.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    overflow: hidden;
+}
+
+#hero .hero-content {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0));
+    height: 100%;
+    width: 60%;
+    padding: 0 5em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+#hero .hero-content .hero-heading {
+    color: var(--universal-color);
+    font-family: roboto slab;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.hero-btn {
+    margin-top: 30px;
+    width: 160px;
+}
+
+
+/* FEATURED PRODUCT  */
+
+#featured-product {
+    padding: 20px;
+    width: 100%;
+}
+
+#featured-product .product-container {
+    background: var(--universal-color);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+}
+
+@media(max-width:1320px) {
+    #featured-product .product-container {
+        justify-content: start;
+    }
+}
+
+#featured-product .product-container::-webkit-scrollbar {
+    background-color: var(--universal-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 20px;
+    height: 10px;
+}
+
+#featured-product .product-container::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 20px;
+}
+
+#featured-product .product-container .product {
+    min-width: 300px;
+    background: var(--universal-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 0 10px var(--primary-color);
+    margin: 20px 10px;
+    flex-shrink: 0;
+}
+
+#featured-product .product-container .product .product-img {
+    width: 300px;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+#featured-product .product-container .product .product-btn {
+    width: 150px;
+    margin: 5px;
+    margin-left: 47%;
+    background-color: var(--universal-color);
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+#featured-product .product-container .product .product-btn:hover,
+#featured-product .product-container .product .product-btn:active {
+    box-shadow: inset 0 0 20px var(--primary-color);
+}
+
+#sustainability {
+    width: 100%;
+    background-color: var(--primary-color);
+    padding: 0.7em 2em;
+}
+
+#sustainability p {
+    letter-spacing: 0.5px;
+    color: var(--universal-color);
+    font-family: jost;
+}
+
+#sustainability .about-btn {
+    margin: 10px 0;
+    font-size: 16px;
+    background-color: var(--universal-color);
+    color: var(--primary-color);
+}
+
+#sustainability .about-btn:hover,
+#sustainability .about-btn:active {
+    box-shadow: inset 0 0 20px var(--primary-color);
+}
+
+#sustainability .about-btn a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* -- UTILITY CLASSES STARTS --  */
+
+.cta-btn {
+    font-size: 22px;
+    font-family: arsenal sc;
+    font-weight: 600;
+    background: var(--primary-color);
+    color: var(--universal-color);
+    padding: 5px 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    transition: all 0.5s;
+    user-select: none;
+}
+
+.cta-btn:hover,
+.cta-btn:active {
+    background: var(--secondary-color);
+}
+
+.page-heading {
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    padding: 0;
+    color: var(--primary-color);
+    font-size: 2rem;
+    text-align: center;
+    font-family: roboto slab;
+}
+
+.product-img {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.product-img img {
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+    transform: scale(1);
+    transition: all 0.5s;
+}
+
+.product-img img:hover {
+    transform: scale(1.1);
+}
+
+.product-price,
+.product-name {
+    font-family: jost;
+    width: 100%;
+    color: var(--primary-color);
+    font-weight: bold;
+    padding: 0 20px;
+    margin: 5px 0;
+}
+
+
+/* -- UTILITY CLASSES ENDS --  */
+
+.lazy-load {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.lazy-load.loaded {
+    opacity: 1;
+}

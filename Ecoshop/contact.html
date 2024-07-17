@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!-- Created by - Harsh Prajapati -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Ecoshop | Harsh Prajapati</title>
+    <!-- --- Favicon--- -->
+    <link rel="shortcut icon" href="assets/images/logo.png" type="icon/x-image">
+
+    <!-- CSS links-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/responsive.css" media="(max-width:850px)">
+
+    <!-- ---- Font awesome link ---  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- --- Fonts links ---  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Form submitted message -->
+    <h6 class="submit-msg">Form submitted successfully .</h6>
+    <!-- Form submitted message -->
+
+
+    <!-- ---- Header starts here ---- -->
+    <header>
+
+        <!-- -- NAV STARTS -- -->
+        <nav>
+            <div id="nav-left">
+                <a title="Ecoshop" href="index.html"><img src="assets/images/logo.png" alt=""></a>
+            </div>
+
+            <div id="nav-right">
+                <i id="menu-icon" class="menu-icon fas fa-bars"></i>
+                <i id="cross-icon" class="menu-icon fas fa-plus"></i>
+                <ul id="menu">
+                    <li title="Home"><a href="index.html">Home</a></li>
+                    <li title="Shop"><a href="shop.html">Shop</a></li>
+                    <li title="About us"><a href="about.html">About Us</a></li>
+                    <li title="Contact us"><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- -- NAV ENDS -- -->
+    </header>
+    <!-- ---- Headeader ends here ---- -->
+
+    <h2 class="page-heading">Contact us</h2>
+
+    <!-- --- Contact information starts here ---- -->
+    <section id="contact">
+        <div class="contact-info">
+            <h4>You can contact us via below information </h4>
+            <p>Email : ecoshop@gmail.com</p>
+            <p>Mobile No. : 2211-5448-5255</p>
+            <p>Address : Hello this is address , Uttar Pradesh , 302541</p>
+        </div>
+        <div class="contact-links">
+            <h4>Follow us in social media</h4>
+            <a href="#link"><i class="fa-brands fa-square-instagram"></i></a>
+        </div>
+    </section>
+    <!-- --- Contact information ends here ---- -->
+    <!-- --- FORM and MAP SECTION starts here ---- -->
+    <section id="form-map">
+        <div class="form">
+            <h3>Get in touch with us </h3>
+            <form>
+                <label for="name ">Name</label>
+                <input required type="text " name="Your name " id="name " placeholder="Your good name ">
+                <label for="email ">Email</label>
+                <input required type="email " name="Your email " id="email " placeholder="Your email ">
+                <label for="subject ">Subject</label>
+                <input type="text " name="Your subject " id="subject " placeholder="Subject ">
+                <label for="message ">Message</label>
+                <textarea name="message " id="message " rows="3 " placeholder="Write message or feedback "></textarea>
+            </form>
+            <button onclick="submitForm()" id="submit-btn" class="cta-btn ">Submit</button>
+        </div>
+
+        <div class="map ">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57126.80425988598!2d80.20529327517399!3d26.506443994622614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c37ba920039e1%3A0xafdddce5014004bb!2sKalyanpur%2C%20Kanpur%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1720948120173!5m2!1sen!2sin"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+    <!-- --- FORM and MAP SECTION ends here ---- -->
+
+
+    <!-- JS links -->
+    <script src="js/script.js "></script>
+</body>
+
+</html>

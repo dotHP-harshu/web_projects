@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<!-- Created by - Harsh Prajapati -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Ecoshop | Harsh Prajapati</title>
+    <!-- --- Favicon--- -->
+    <link rel="shortcut icon" href="assets/images/logo.png" type="icon/x-image">
+
+    <!-- CSS links-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/shop.css">
+    <link rel="stylesheet" href="css/responsive.css" media="(max-width:900px)">
+
+    <!-- ---- Font awesome link ---  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- --- Fonts links ---  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- ---- Header starts here ---- -->
+    <header>
+
+        <!-- -- NAV STARTS -- -->
+        <nav>
+            <div id="nav-left">
+                <a title="Ecoshop" href="index.html"><img src="assets/images/logo.png" alt=""></a>
+            </div>
+
+            <div id="nav-right">
+                <i id="menu-icon" class="menu-icon fas fa-bars"></i>
+                <i id="cross-icon" class="menu-icon fas fa-plus"></i>
+                <ul id="menu">
+                    <li title="Home"><a href="index.html">Home</a></li>
+                    <li title="Shop"><a href="shop.html">Shop</a></li>
+                    <li title="About us"><a href="about.html">About Us</a></li>
+                    <li title="Contact us"><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- -- NAV ENDS -- -->
+    </header>
+    <!-- ---- Headeader ends here ---- -->
+    <!-- --- PAGE HEADING --- -->
+    <h2 class="page-heading">Shop</h2>
+    <!-- --- PAGE HEADING --- -->
+    <section id="shop">
+        <div class="filter">
+            <input onkeyup="searching()" type="text" placeholder="Search for products, brands " id="search">
+            <div class="categories">
+                <h3 onclick="showCategories()">Categories</h3>
+                <i onclick="showCategories()" class="fas fa-angle-down"></i>
+                <span>
+                    <input  class="category"  type="checkbox" id="bags">
+                    <label for="bags">bags</label>
+                </span>
+                <span>
+                    <input class="category"   type="checkbox" id="makeup">
+                    <label  for="makeup">Makeup</label>
+                </span>
+                <span>
+                    <input  class="category" type="checkbox" id="shoes">
+                    <label for="shoes">Shoes</label>
+                </span>
+                <span>
+                    <input  class="category" type="checkbox" id="wooden">
+                    <label for="wodden">Wooden</label>
+                </span>
+                <button onclick="showCategoriesProduct()" class="apply-btn">Apply</button>
+            </div>
+        </div>
+        <div class="product-container">
+            <!-- PRODUCT ITEMS -->
+            <div class="product-items">
+                <div class="  item-img">
+                    <img class="lazy-load" loading="lazy" data-src="assets/images/shop-product/pr-1.jpg" alt="">
+                </div>
+                <div class="item-detail">
+                    <p>Green bags</p>
+                    <p>469/-</p>
+                </div>
+                <button class="detail-btn cta-btn">Buy now</button>
+                <button class="detail-btn cta-btn">View detail</button>
+                <div class="hidden-detail">
+                    <div class="tags">
+                        <p>bags</p>
+                    </div>
+                    <div class="information">
+                        <p>Name : product 1</p>
+                    </div>
+                </div>
+            </div>
+            <!-- PRODUCT ITEMS -->
+            <!-- PRODUCT ITEMS -->
+            <div class="product-items">
+                <div class="  item-img">
+                    <img class="lazy-load" loading="lazy" data-src="assets/images/product-2.jpeg" alt="">
+                </div>
+                <div class="item-detail">
+                    <p>Wooden brush</p>
+                    <p>79/-</p>
+                </div>
+                <button class="detail-btn cta-btn">Buy now</button>
+                <button class="detail-btn cta-btn">View detail</button>
+                <div class="hidden-detail">
+                    <div class="tags">
+                        <p>wooden</p>
+                    </div>
+                    <div class="information">
+                        <p>Name : product 1</p>
+                    </div>
+                </div>
+            </div>
+            <!-- PRODUCT ITEMS -->
+            <!-- PRODUCT ITEMS -->
+            <div class="product-items">
+                <div class="  item-img">
+                    <img class="lazy-load" loading="lazy" data-src="assets/images/shop-product/pr-2.jpg" alt="">
+                </div>
+                <div class="item-detail">
+                    <p>Brown shoes</p>
+                    <p>659/-</p>
+                </div>
+                <button class="detail-btn cta-btn">Buy now</button>
+                <button class="detail-btn cta-btn">View detail</button>
+                <div class="hidden-detail">
+                    <div class="tags">
+                        <p>shoes/p>
+                    </div>
+                    <div class="information">
+                        <p>Name : product 1</p>
+                    </div>
+                </div>
+            </div>
+            <!-- PRODUCT ITEMS -->
+            <!-- PRODUCT ITEMS -->
+            <div class="product-items">
+                <div class="  item-img">
+                    <img class="lazy-load" loading="lazy" data-src="assets/images/product-4.jpeg" alt="">
+                </div>
+                <div class="item-detail">
+                    <p>Greeting cards</p>
+                    <p>29/-</p>
+                </div>
+                <button class="detail-btn cta-btn">Buy now</button>
+                <button class="detail-btn cta-btn">View detail</button>
+                <div class="hidden-detail">
+                    <div class="tags">
+                        <p>card</p>
+                    </div>
+                    <div class="information">
+                        <p>Name : product 1</p>
+                    </div>
+                </div>
+            </div>
+            <!-- PRODUCT ITEMS -->
+            <!-- PRODUCT ITEMS -->
+            <div class="product-items">
+                <div class="  item-img">
+                    <img class="lazy-load" loading="lazy" data-src="assets/images/product-5.jpeg" alt="">
+                </div>
+                <div class="item-detail">
+                    <p>White cards</p>
+                    <p>89/-</p>
+                </div>
+                <button class="detail-btn cta-btn">Buy now</button>
+                <button class="detail-btn cta-btn">View detail</button>
+                <div class="hidden-detail">
+                    <div class="tags">
+                        <p>card</p>
+                    </div>
+                    <div class="information">
+                        <p>Name : product 1</p>
+                    </div>
+                </div>
+            </div>
+            <!-- PRODUCT ITEMS -->
+            <!-- PRODUCT ITEMS -->
+            <div class="product-items">
+                <div class="  item-img">
+                    <img class="lazy-load" loading="lazy" data-src="assets/images/shop-product/pr-3.jpg" alt="">
+                </div>
+                <div class="item-detail">
+                    <p>Light paper bags</p>
+                    <p>9/-</p>
+                </div>
+                <button class="detail-btn cta-btn">Buy now</button>
+                <button class="detail-btn cta-btn">View detail</button>
+                <div class="hidden-detail">
+                    <div class="tags">
+                        <p>bags</p>
+                    </div>
+                    <div class="information">
+                        <p>Name : product 1</p>
+                    </div>
+                </div>
+            </div>
+            <!-- PRODUCT ITEMS -->
+            <!-- PRODUCT ITEMS -->
+            <div class="product-items">
+                <div class="  item-img">
+                    <img class="lazy-load" loading="lazy" data-src="assets/images/product-7.jpeg" alt="">
+                </div>
+                <div class="item-detail">
+                    <p>Wooden paper frame</p>
+                    <p>235/-</p>
+                </div>
+                <button class="detail-btn cta-btn">Buy now</button>
+                <button class="detail-btn cta-btn">View detail</button>
+                <div class="hidden-detail">
+                    <div class="tags">
+                        <p>wooden</p>
+                    </div>
+                    <div class="information">
+                        <p>Name : product 1</p>
+                    </div>
+                </div>
+            </div>
+            <!-- PRODUCT ITEMS -->
+            <!-- PRODUCT ITEMS -->
+            <div class="product-items">
+                <div class="  item-img">
+                    <img class="lazy-load" loading="lazy" data-src="assets/images/shop-product/pr-5.jpg" alt="">
+                </div>
+                <div class="item-detail">
+                    <p>Dark black lipstick</p>
+                    <p>49/-</p>
+                </div>
+                <button class="detail-btn cta-btn">Buy now</button>
+                <button class="detail-btn cta-btn">View detail</button>
+                <div class="hidden-detail">
+                    <div class="tags">
+                        <p>makeup</p>
+                    </div>
+                    <div class="information">
+                        <p>Name : product 1</p>
+                    </div>
+                </div>
+            </div>
+            <!-- PRODUCT ITEMS -->
+            <!-- PRODUCT ITEMS -->
+            <div class="product-items">
+                <div class="  item-img">
+                    <img class="lazy-load" loading="lazy" data-src="assets/images/shop-product/pr-4.jpg" alt="">
+                </div>
+                <div class="item-detail">
+                    <p>Blue shoes</p>
+                    <p>869/-</p>
+                </div>
+                <button class="detail-btn cta-btn">Buy now</button>
+                <button class="detail-btn cta-btn">View detail</button>
+                <div class="hidden-detail">
+                    <div class="tags">
+                        <p>shoes</p>
+                    </div>
+                    <div class="information">
+                        <p>Name : product 1</p>
+                    </div>
+                </div>
+            </div>
+            <!-- PRODUCT ITEMS -->
+            <!-- PRODUCT ITEMS -->
+            <div class="product-items">
+                <div class="  item-img">
+                    <img class="lazy-load" loading="lazy" data-src="assets/images/shop-product/pr-8.jpg" alt="">
+                </div>
+                <div class="item-detail">
+                    <p>Running shoes</p>
+                    <p>999/-</p>
+                </div>
+                <button class="detail-btn cta-btn">Buy now</button>
+                <button class="detail-btn cta-btn">View detail</button>
+                <div class="hidden-detail">
+                    <div class="tags">
+                        <p>shoes</p>
+                    </div>
+                    <div class="information">
+                        <p>Name : product 1</p>
+                    </div>
+                </div>
+            </div>
+            <!-- PRODUCT ITEMS -->
+            <!-- PRODUCT ITEMS -->
+            <div class="product-items">
+                <div class="  item-img">
+                    <img class="lazy-load" data-src="assets/images/product-11.jpeg" alt="">
+                </div>
+                <div class="item-detail">
+                    <p>Wooden things</p>
+                    <p>599/-</p>
+                </div>
+                <button class="detail-btn cta-btn">Buy now</button>
+                <button class="detail-btn cta-btn">View detail</button>
+                <div class="hidden-detail">
+                    <div class="tags">
+                        <p>wooden/p>
+                    </div>
+                    <div class="information">
+                        <p>Name : product 1</p>
+                    </div>
+                </div>
+            </div>
+            <!-- PRODUCT ITEMS -->
+        </div>
+    </section>
+
+
+    <!-- JS links -->
+    <script src="js/script.js"></script>
+    <script src="js/shop.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+.page-heading {
+    padding: 10px 0;
+}
+
+#nav-left {
+    width: 80%;
+}
+
+#nav-right {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav-right i {
+    display: inline-block;
+    color: var(--primary-color);
+}
+
+#nav-right #cross-icon {
+    transform: rotate(45deg);
+    display: none;
+}
+
+#nav-right ul {
+    background-color: var(--universal-color);
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 55;
+    height: 70vh;
+    width: 60vw;
+    user-select: none;
+    display: none;
+}
+
+#hero .hero-content {
+    width: 100%;
+}
+
+
+/* CONTACT US PAGE  */
+
+#contact {
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.contact-info,
+.contact-links {
+    width: 100%;
+    padding: 0;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.contact-info h4,
+.contact-links h4 {
+    font-size: 16px;
+}
+
+.contact-info p {
+    font-size: 14px;
+    margin: 10px 5px;
+}
+
+#form-map {
+    height: auto;
+    flex-direction: column;
+}
+
+.form,
+.map {
+    width: 100%;
+}
+
+.form {
+    padding: 2rem 1rem;
+}
+
+.form form {
+    padding: 0;
+}
+
+.form form input::placeholder,
+.form form textarea::placeholder {
+    font: 16px roboto slab;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 100;
+}
+
+
+/* CONTACT US PAGE  */
+
+
+/* SHOP PAGE  */
+
+#shop {
+    flex-direction: column;
+    height: auto;
+}
+
+.filter {
+    width: 100%;
+}
+
+.categories span,
+.apply-btn {
+    display: none;
+}
+
+.categories i {
+    display: inline-block;
+}
+
+.product-container {
+    width: 100%;
+}
+
+.product-items {
+    margin: 0 auto;
+}
+
+
+/* SHOP PAGE  */

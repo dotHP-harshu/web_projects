@@ -1,0 +1,55 @@
+#mission,
+#story {
+    background-color: var(--primary-color);
+    color: var(--universal-color);
+}
+
+
+/* --------------------- */
+
+.about-sections {
+    padding: 20px 40px;
+}
+
+.about-sections h3 {
+    font: 20px jost;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.about-sections p {
+    font: 18px jost;
+    margin-bottom: 10px;
+}
+
+
+/* CSS FOR IMAGE DESIGNS ---------------------------------------- */
+
+#image-container {
+    height: 50vmin;
+    width: 100wh;
+    position: relative;
+    overflow: hidden;
+}
+
+#image-container .up,
+#image-container .down {
+    height: 50%;
+    width: 100%;
+}
+
+#image-container .down {
+    background-color: var(--primary-color);
+}
+
+#image-container img {
+    height: auto;
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* CSS FOR IMAGE DESIGNS ---------------------------------------- */

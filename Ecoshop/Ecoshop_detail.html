@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Brief: E-Commerce Website for EcoShop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2, h3 {
+            color: #2E8B57;
+        }
+        p, ul {
+            margin-bottom: 10px;
+        }
+        ul {
+            list-style-type: none;
+        }
+        code {
+            display: block;
+            background: #f4f4f4;
+            padding: 10px;
+            margin: 10px 0;
+            border-left: 3px solid #2E8B57;
+        }
+    </style>
+</head>
+<body>
+    <h1>Project Brief: E-Commerce Website for EcoShop</h1>
+
+    <h2>Project Overview</h2>
+    <p>We need a website for our online store, 'EcoShop,' which sells eco-friendly products. The site should be visually appealing, user-friendly, and responsive. It will include the following pages: Home, Shop, Product Details, About Us, and Contact Us.</p>
+
+    <h2>Design Preferences</h2>
+    <ul>
+        <li>Clean, modern design</li>
+        <li>Earthy color palette (greens, browns, whites)</li>
+        <li>High-quality images of products</li>
+        <li>Easy navigation</li>
+        <li>Prominent call-to-action buttons</li>
+    </ul>
+
+    <h2>Pages and Content</h2>
+    <h3>1. Home Page</h3>
+    <ul>
+        <li><strong>Hero Section:</strong>
+            <ul>
+                <li>Large background image of nature</li>
+                <li>Text overlay: 'Welcome to EcoShop - Your Destination for Eco-Friendly Products'</li>
+                <li>Call-to-action button: 'Shop Now'</li>
+            </ul>
+        </li>
+        <li><strong>Featured Products:</strong>
+            <ul>
+                <li>Display 3-4 featured products with images, names, prices, and 'Buy Now' buttons</li>
+            </ul>
+        </li>
+        <li><strong>Sustainability Section:</strong>
+            <ul>
+                <li>Brief paragraph about the company's commitment to sustainability</li>
+                <li>Link to 'About Us' page</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>2. Shop Page</h3>
+    <ul>
+        <li><strong>Product Grid:</strong>
+            <ul>
+                <li>Display all products in a grid format with images, names, prices, and 'View Details' buttons</li>
+            </ul>
+        </li>
+        <li><strong>Filters:</strong>
+            <ul>
+                <li>Filter options by category, price range, and rating</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>3. Product Details Page</h3>
+    <ul>
+        <li><strong>Product Image:</strong>
+            <ul>
+                <li>High-quality image of the product</li>
+            </ul>
+        </li>
+        <li><strong>Product Information:</strong>
+            <ul>
+                <li>Product name, price, detailed description, and 'Add to Cart' button</li>
+            </ul>
+        </li>
+        <li><strong>Customer Reviews:</strong>
+            <ul>
+                <li>Section for customer reviews with star ratings and comments</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>4. About Us Page</h3>
+    <ul>
+        <li><strong>Company Information:</strong>
+            <ul>
+                <li>Image of the team</li>
+                <li>Paragraph about the company's mission and values</li>
+            </ul>
+        </li>
+        <li><strong>Our Story:</strong>
+            <ul>
+                <li>Timeline or narrative of how the company started</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>5. Contact Us Page</h3>
+    <ul>
+        <li><strong>Contact Form:</strong>
+            <ul>
+                <li>Fields for name, email, subject, and message</li>
+                <li>'Submit' button</li>
+            </ul>
+        </li>
+        <li><strong>Contact Information:</strong>
+            <ul>
+                <li>Email address, phone number, and physical address</li>
+                <li>Google Maps embed showing the store location</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>Additional Features</h2>
+    <ul>
+        <li>Navigation Bar: Should include links to Home, Shop, About Us, and Contact Us.</li>
+        <li>Footer: Include social media links, newsletter signup, and copyright information.</li>
+        <li>Responsive Design: Ensure the site looks good on both desktop and mobile devices.</li>
+    </ul>
+
+    <h2>Design References</h2>
+    <ul>
+        <li>Example E-Commerce Site 1</li>
+        <li>Example E-Commerce Site 2</li>
+    </ul>
+
+    <h2>Deadline</h2>
+    <p>4 weeks from project start date</p>
+
+    <h2>UI Structure and Explanation</h2>
+    <h3>1. Header</h3>
+    <ul>
+        <li>Logo on the left</li>
+        <li>Navigation links on the right</li>
+        <li>Sticky header that remains at the top of the page when scrolling</li>
+    </ul>
+
+    <h3>2. Hero Section</h3>
+    <ul>
+        <li>Full-width background image with overlay text and a central button</li>
+        <li>Engaging visuals to draw visitors in</li>
+    </ul>
+
+    <h3>3. Product Grid</h3>
+    <ul>
+        <li>Flexbox or CSS grid layout to organize products</li>
+        <li>Hover effects on product images for better interactivity</li>
+    </ul>
+
+    <h3>4. Contact Form</h3>
+    <ul>
+        <li>Simple form with validation to ensure required fields are filled</li>
+        <li>Clear labels and input fields for user-friendly experience</li>
+    </ul>
+
+    <h2>Front-End Functions</h2>
+
+    <h3>1. Smooth Scrolling</h3>
+    <code>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {<br>
+            anchor.addEventListener('click', function(e) {<br>
+                e.preventDefault();<br>
+                document.querySelector(this.getAttribute('href')).scrollIntoView({<br>
+                    behavior: 'smooth'<br>
+                });<br>
+            });<br>
+        });<br>
+    </code>
+
+    <h3>2. Add to Cart Button</h3>
+    <code>
+        document.querySelector('.add-to-cart-btn').addEventListener('click', function() {<br>
+            const product = {<br>
+                id: this.dataset.id,<br>
+                name: this.dataset.name,<br>
+                price: this.dataset.price,<br>
+                image: this.dataset.image<br>
+            };<br>
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];<br>
+            cart.push(product);<br>
+            localStorage.setItem('cart', JSON.stringify(cart));<br>
+            alert('Product added to cart!');<br>
+        });<br>
+    </code>
+
+    <h3>3. Form Validation</h3>
+    <code>
+        document.querySelector('.contact-form').addEventListener('submit', function(e) {<br>
+            e.preventDefault();<br>
+            const name = document.querySelector('#name').value;<br>
+            const email = document.querySelector('#email').value;<br>
+            const subject = document.querySelector('#subject').value;<br>
+            const message = document.querySelector('#message').value;<br>
+
+            if (name && email && subject && message) {<br>
+                alert('Form submitted successfully!');<br>
+                this.reset();<br>
+            } else {<br>
+                alert('Please fill in all fields.');<br>
+            }<br>
+        });<br>
+    </code>
+
+    <h2>Additional Notes</h2>
+    <p>For backend functionalities such as user authentication, managing the cart, and handling form submissions to send emails, you would typically need a backend service (e.g., Node.js, Python, PHP) and a database (e.g., MySQL, MongoDB). Since you are focusing on the front end, you can use placeholders or mock data for these features.</p>
+</body>
+</html>
