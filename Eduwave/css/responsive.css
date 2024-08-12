@@ -1,0 +1,111 @@
+/* for mobile css */
+
+@media (max-width:425px) {
+    /* style for responsive navbar starts */
+    .logo {
+        width: 35%;
+    }
+    .menu-btn {
+        width: 100%;
+        justify-content: start;
+    }
+    .menu-btn .button {
+        margin: 0 10px;
+    }
+    .menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        flex-direction: column;
+        background: var(--background-color);
+        box-shadow: 0 0 10px var(--text-color);
+        justify-content: unset;
+        width: 100%;
+        z-index: 2;
+        transform: translateX(120%);
+        transition: all 0.7s;
+    }
+    .menu li {
+        width: 100%;
+        padding: 1rem;
+    }
+    .menu-icon {
+        display: inline-block;
+        position: fixed;
+        top: 0px;
+        right: 0;
+        background-color: var(--background-color);
+        padding: 0.75rem 1rem;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        z-index: 5;
+    }
+    .fa-plus,
+    .fa-bars {
+        color: var(--primary-color);
+        font-size: 1.5rem;
+        cursor: pointer;
+        transition-delay: 0.7s;
+    }
+    .fa-plus {
+        display: none;
+        transform: rotate(45deg);
+    }
+    /* style for responsive navbar ends */
+    /* style for responsive hero starts */
+    .hero-msg {
+        width: 100%;
+    }
+    .hero-img {
+        display: none;
+    }
+    /* style for responsive hero ends */
+    /* style for responsive testemonial section starts */
+    .testemonial-container {
+        width: 100%;
+        padding: 0;
+    }
+    .testemonial-card {
+        height: 265px;
+    }
+    .slick-next::before,
+    .slick-prev::before {
+        display: none;
+    }
+    /* style for responsive testemonial section ends */
+    /* style for responsive footer starts */
+    footer {
+        flex-direction: column-reverse;
+    }
+    .links,
+    .signup-form {
+        width: 100%;
+    }
+    .links {
+        margin-top: 1rem;
+    }
+    /* style for responsive footer ends */
+    /* style for about page starts here  */
+    .mission-container {
+        flex-direction: column-reverse;
+    }
+    .story-container {
+        flex-direction: column;
+    }
+    .mission-content,
+    .mission-img,
+    .story-content,
+    .story-img {
+        width: 100% !important;
+    }
+    /* style for about page ends here  */
+    /* style for contact page starts here  */
+    .contact-container {
+        flex-direction: column-reverse;
+    }
+    .contact-form,
+    .contact-img {
+        width: 100%;
+    }
+    /* style for contact page ends here  */
+}

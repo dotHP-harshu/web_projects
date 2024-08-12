@@ -1,0 +1,152 @@
+#contact {
+    width: 100%;
+    padding: 3rem;
+}
+
+.contact-container {
+    width: 100%;
+    display: flex;
+    background: white;
+    border-radius: 5px;
+    border: 2px solid var(--primary-color);
+}
+
+.contact-form {
+    width: 60%;
+    padding: 2rem;
+    margin: auto;
+}
+
+.contact-form h2 {
+    font-size: 3rem;
+    color: var(--primary-color);
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+
+.contact-form p {
+    font-size: 0.75rem;
+    color: var(--text-color);
+    opacity: 0.8;
+    margin-bottom: 1rem;
+}
+
+.contact-form form {
+    overflow: hidden;
+    padding: 1rem;
+}
+
+.contact-form form input[type='text'],
+.contact-form form input[type='email'],
+.contact-form form textarea {
+    width: 60%;
+    margin: 1rem 0;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    border-bottom: 2px solid var(--text-color);
+    font-family: roboto;
+    line-height: 1rem;
+    padding: 0 5px;
+}
+
+input[type="checkbox"] {
+    /* Remove default appearance */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* Create custom appearance */
+    width: 15px;
+    height: 15px;
+    background: transparent;
+    border-radius: 4px;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+input[type="checkbox"]:checked {
+    background-color: var(--primary-color);
+    /* Change to your desired color */
+}
+
+input[type="checkbox"]:checked::before {
+    content: '';
+    position: absolute;
+    left: 3px;
+    top: 1px;
+    width: 4px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.contact-form form input::placeholder {
+    font-size: 1rem;
+    line-height: 1rem;
+}
+
+.contact-form form textarea {
+    opacity: 0.75;
+    resize: none;
+    padding: 0;
+}
+
+.submit-btn {
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid var(--text-color);
+    transition-duration: 0.7s;
+    color: var(--text-color);
+    border-radius: 3px;
+    font-size: 1rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    /* Ensure the button is above its parent */
+}
+
+.submit-btn::before {
+    content: '';
+    top: 0;
+    z-index: -1;
+    /* Ensure the pseudo-element is behind the button text */
+    position: absolute;
+    left: 0;
+    height: 100%;
+    background-color: var(--primary-color);
+    transition-duration: 0.7s;
+    width: 100%;
+    transform: translateX(-101%);
+}
+
+.submit-btn:hover {
+    color: white;
+}
+
+.submit-btn:hover::before {
+    transform: translateX(0);
+}
+
+.contact-img {
+    width: 40%;
+    background-color: var(--primary-color);
+    overflow: hidden;
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
