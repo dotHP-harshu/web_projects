@@ -1,0 +1,327 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* MAIN STARTS HERE  */
+
+main {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* MAIN'S CHILD STARTS HERE  */
+
+
+/* --------------------------------------------- header start  */
+header {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 3em;
+    width: 50%;
+    z-index: 5;
+}
+
+header .logo {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+header nav {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav .nav-icon {
+    display: none;
+}
+
+header nav ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+header nav ul li {
+    list-style-type: none;
+}
+
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all 0.7s;
+    padding: 5px;
+}
+
+header nav ul li a:hover {
+    border-bottom: 1.5px solid white;
+}
+
+/* --------------------------------------------- header end */
+
+/* --------------------------------------------- main img section starts */
+#main-img {
+    width: 60%;
+    height: 100%;
+    background-color: black;
+    position: relative;
+}
+
+#main-img::after {
+    content: '';
+    width: 100%;
+    height: 40%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    opacity: 0.5;
+}
+
+/* --------------------------------------------- slider start */
+.slider {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transition: all 0.7s;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.slide-3 {
+    background: url('../images/desktop-image-hero-3.jpg') no-repeat center center/cover;
+}
+
+.slide-2 {
+    background: url('../images/desktop-image-hero-2.jpg') no-repeat center center/cover;
+}
+
+.slide-1 {
+    background: url('../images/desktop-image-hero-1.jpg') no-repeat center center/cover;
+}
+
+.active-slide {
+    opacity: 1;
+}
+
+
+/* --------------------------------------------- slider end */
+
+.slider-controls {
+    position: absolute;
+    bottom: 0%;
+    left: 100%;
+    z-index: 2;
+    display: flex;
+}
+
+.slider-controls span {
+    background-color: black;
+    color: white;
+    padding: 1.5em;
+    cursor: pointer;
+    transition: all 0.7s;
+}
+
+.slider-controls span:hover,
+.disable-button {
+    background-color: rgb(87, 87, 87);
+}
+
+.slider-controls span:active {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.slider-controls span i {
+    font-size: 20px;
+}
+
+
+/* --------------------------------------------- main img section end */
+
+#main-content {
+    width: 40%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.content {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 5em;
+    opacity: 0;
+    left: 0;
+    top: 100%;
+    transition: all 0.7s;
+}
+
+.content h3 {
+    font-family: Arial;
+    font-size: 2rem;
+}
+
+.content p {
+    margin-top: 1em;
+    color: rgb(143, 143, 143);
+    font-family: cursive;
+    font-size: 0.75rem;
+}
+
+.active-content {
+    top: 0;
+    opacity: 1;
+}
+
+.show-btn {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-family: calibri;
+    font-size: 1rem;
+    margin-top: 2em;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.show-btn:hover {
+    letter-spacing: 3px;
+}
+
+.show-btn:active {
+    letter-spacing: 5px;
+}
+
+/* MAIN'S CHILD ENDS HERE  */
+
+/* MAIN ENDS HERE  */
+
+
+/* FOOTER ENDS HERE  */
+
+footer {
+    width: 100%;
+    height: 40%;
+    display: flex;
+}
+
+.footer-img {
+    width: 30%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.footer-img img {
+    width: 100%;
+    height: auto;
+    display: none;
+}
+
+.footer-img-1 {
+    background: url('../images/image-about-dark.jpg') no-repeat center center/cover;
+}
+
+.footer-img-2 {
+    background: url('../images/image-about-light.jpg') no-repeat center center/cover;
+}
+
+
+.footer-content {
+    width: 40%;
+    padding: 2em;
+}
+
+.footer-content h6 {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    font-size: 1rem;
+    font-family: calibri;
+}
+
+.footer-content p {
+    margin-top: 1em;
+    color: rgb(143, 143, 143);
+    font-family: cursive;
+    font-size: 0.85rem;
+    word-spacing: 5px;
+}
+
+/* FOOTER STARTS HERE  */
+
+
+
+
+
+@media (max-width:768px) {
+    main {
+        height: 60%;
+    }
+
+    header {
+        width: 60%;
+    }
+
+    .content {
+        padding: 2em;
+    }
+
+    .slider-controls span {
+        padding: 0.75em;
+    }
+
+    .footer-content h6 {
+        letter-spacing: 2px;
+        word-spacing: 5px;
+    }
+
+    .footer-content p {
+        letter-spacing: 0;
+        font-size: 0.6rem;
+    }
+
+    footer {
+        height: 40%;
+    }
+}
