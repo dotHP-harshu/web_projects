@@ -1,0 +1,194 @@
+/* Header adjustment */
+header nav .menu {
+    display: none;
+}
+
+#logo {
+    width: 50%;
+}
+
+nav {
+    width: 50%;
+    height: 20px;
+}
+
+.nav-icons {
+    display: inline-block;
+    position: relative;
+    height: 20px;
+    width: 100%;
+    z-index: 5;
+}
+
+.nav-icons span {
+    height: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.nav-icons span i {
+    font-size: 1.3rem;
+}
+
+#close-icon {
+    display: none;
+    color: white;
+}
+
+header nav .menu {
+    background-color: rgba(1, 1, 24, 0.919);
+    position: absolute;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    padding: 0;
+    justify-content: flex-start;
+    padding-top: 8em;
+}
+
+header nav .menu li {
+    width: 80%;
+    padding: 0.5em 0;
+    text-align: center;
+}
+
+header nav .menu li a {
+    color: white;
+    font-weight: lighter;
+}
+
+.menu-saperator {
+    width: 70%;
+    height: 0.5px;
+    opacity: 0.5;
+}
+
+#login-btn {
+    margin-top: 1em;
+    width: 70%;
+    border: 1.5px solid white;
+    background-color: transparent;
+}
+
+.nav-social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin-top: 13em;
+}
+
+.nav-social-links i {
+    color: white;
+    font-size: 2rem;
+}
+
+/* Header adjustment */
+/* Main adjustment */
+main {
+    flex-direction: column-reverse;
+    height: auto;
+    margin-bottom: 2em;
+}
+
+#main-content,
+#main-img {
+    width: 100%;
+    padding: 1em 3em;
+    text-align: center;
+}
+
+.slider-controls {
+    flex-direction: column;
+}
+
+.controls {
+    font-size: 0.85rem;
+}
+
+.slider {
+    flex-direction: column;
+    height: 40em;
+}
+
+.img-slides,
+.content-slides {
+    width: 100% !important;
+}
+
+.content-slides {
+    padding: 0 2em;
+}
+
+/* Main adjustment */
+/* Download adjustment */
+.download-card-container {
+    flex-direction: column;
+}
+
+.download-card {
+    margin: 0 !important;
+}
+
+/* Download adjustment */
+/* FAQ adjustment */
+.faq {
+    width: 100%;
+}
+
+/* FAQ adjustment */
+/* Contact adjustment */
+#contact {
+    padding: 1em;
+}
+
+.contact-head {
+    width: 100%;
+}
+
+.contact-form {
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Contact adjustment */
+/* Footer adjustment */
+footer {
+    flex-direction: column;
+    gap: 1em;
+}
+
+#footer-nav {
+    width: 100%;
+    flex-direction: column;
+    gap: 3em;
+}
+
+#footer-nav #logo {
+    width: 100%;
+}
+
+#footer-nav .menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    padding: 0;
+}
+
+.social-links {
+    width: 100%;
+    margin-top: 4em;
+    padding: 0;
+}
+
+/* Footer adjustment */
+.download-head p,
+.feature-head p,
+.faq-head p {
+    width: 80%;
+}
