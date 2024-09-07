@@ -1,0 +1,366 @@
+@font-face {
+    font-family: thin;
+    src: url('../fonts/KlavikaLight-OSTF.otf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+/* MAIN STARTS HERE  */
+
+main {
+    width: 100%;
+    height: 100vh;
+    background: url('../images/desktop/image-hero.jpg'), no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* HEADER STARTS HERE  */
+header {
+    width: 100%;
+    padding: 5em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.logo img {
+    width: 100%;
+}
+
+nav {
+    width: 70%;
+}
+
+/* MENU ICONS STARTS HERE (ONLY FOR MOBILE) */
+
+.menu-icon {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: none;
+}
+
+.menu-icon span {
+    display: block;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.menu-icon span img {
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+/* MENU ICONS ENDS HERE (ONLY FOR MOBILE) */
+
+/* MENU STARTS HERE (ONLY FOR DESLTOP) */
+
+nav ul {
+    float: right;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+nav ul li {
+    list-style: none;
+    padding-bottom: 2px;
+    transition: all 0.7s;
+}
+
+nav ul li:hover {
+    border-bottom: 1.5px solid white;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* MENU ENDS HERE (ONLY FOR DESLTOP) */
+
+/* HEADER ENDS HERE  */
+
+/* MAIN MSG SECTION STARTS HERE  */
+.main-msg {
+    width: 100%;
+    padding: 5em;
+}
+
+.msg-wrapper {
+    width: fit-content;
+    padding: 2em;
+    border: 2px solid white;
+}
+
+.msg-wrapper h1 {
+    font-family: thin;
+    color: white;
+    text-transform: uppercase;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    font-size: 4rem;
+    word-spacing: 10px;
+}
+
+/* MAIN MSG SECTION ENDS HERE  */
+
+/* MAIN ENDS HERE  */
+
+/* INTERACTIVE SECTION STARTS HERE  */
+#interactive {
+    width: 100%;
+    min-height: 80vh;
+    padding: 8em;
+}
+
+#interactive .wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.interactive-img {
+    width: 70%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.interactive-img img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.interactive-msg {
+    position: absolute;
+    bottom: -7%;
+    right: 0;
+    width: 50%;
+    background-color: white;
+    z-index: 5;
+    padding: 2em;
+}
+
+.interactive-msg h2 {
+    font-family: thin;
+    font-size: 3.5rem;
+    word-spacing: 10px;
+    text-transform: uppercase;
+    font-weight: lighter;
+    margin-bottom: 0.5em;
+}
+
+.interactive-msg p {
+    line-height: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    color: #898989;
+}
+
+/* INTERACTIVE SECTION ENDS HERE  */
+/* CREATION SECTION STARTS HERE  */
+#creation {
+    width: 100%;
+    padding: 5em;
+}
+
+.creation-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.creation-head h3 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-family: thin;
+    font-weight: lighter;
+    letter-spacing: 2px;
+}
+
+.see-more,
+.see-all-bottom {
+    background-color: black;
+    color: white;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.7s;
+}
+
+.see-all-bottom {
+    display: none;
+}
+
+.see-more:hover,
+.see-all-bottom {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+/* CREATION CONTAINER STARTS HERE  */
+.creation-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    place-items: center;
+    gap: 2em;
+    padding: 2em 0;
+}
+
+.creation-items {
+    width: 250px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.creation-items img {
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.creation-img-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 1em;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+    transition: all 0.7s;
+    color: white;
+}
+
+.creation-img-content h3 {
+    font-size: 2rem;
+    font-family: thin;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+.creation-items:hover .creation-img-content {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* CREATION CONTAINER ENDS HERE  */
+
+
+/* CREATION SECTION ENDS HERE  */
+/* FOOTER SECTION STARTS HERE  */
+footer {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5em;
+}
+
+footer .nav-section {
+    width: 50%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    align-items: flex-start;
+}
+
+footer .nav-section nav {
+    width: 100%;
+    align-items: flex-start;
+    display: flex;
+}
+
+footer .nav-section nav ul {
+    gap: 2em;
+    justify-content: flex-start;
+}
+
+footer .social-section {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 2em;
+    width: 50%;
+    flex-direction: column;
+}
+
+footer .social-section .social-icon {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1em;
+}
+
+footer .social-section .social-icon img {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    padding: 5px;
+    transition: all 0.7s;
+}
+
+footer .social-section .social-icon img:hover {
+    border-bottom: 1px solid white;
+}
+
+footer .social-section .copyright p {
+    color: white;
+    opacity: 0.8;
+    text-align: center;
+}
+
+/* FOOTER SECTION ENDS HERE  */
+
+
+
+
+#preloader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+}
