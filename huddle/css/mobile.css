@@ -1,0 +1,61 @@
+body {
+    width: 100%;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.hero-content {
+    padding: 2rem 1em;
+}
+
+.hero-content p {
+    width: 100%;
+}
+
+.hero-content h1 {
+    font-size: 1.5rem;
+}
+
+#numerics {
+    padding: 1em;
+    flex-direction: column;
+    gap: 2em;
+}
+
+#section-container {
+    padding: 60px 0;
+    gap: 60px;
+}
+
+#section-container section {
+    flex-direction: column !important;
+}
+
+.section-img,
+.section-content {
+    width: 100%;
+    padding: 1em;
+}
+
+
+footer {
+    flex-direction: column-reverse;
+    gap: 1em;
+}
+
+.footer-about,
+.newsletter {
+    width: 100%;
+}
+
+#footer-msg h1 {
+    font-size: 1.5rem;
+    padding-inline-start: 1em;
+    text-align: center;
+}
+
+#email input {
+    width: 200px;
+}

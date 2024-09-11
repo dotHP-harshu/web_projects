@@ -1,0 +1,389 @@
+:root {
+    --main-color: #FD53C0;
+}
+
+/* Utility Classes starts*/
+.heading {
+    font-size: 1.5rem;
+    color: black;
+    font-family: Arial;
+    line-height: 2.5rem;
+}
+
+.para {
+    font-size: 0.75rem;
+    font-family: cursive;
+    color: rgb(23, 23, 23);
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+}
+
+.btn {
+    padding: 0.5em 2em;
+    border-radius: 50px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-family: calibri;
+    font-weight: 600;
+    transition: all 0.5s;
+}
+
+/* Utility Classes ends */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    font-family: arial rounded mt
+}
+
+/* Main starts*/
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Header starts*/
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2.5em;
+    align-items: center;
+}
+
+.logo {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    width: 50%;
+    height: auto;
+
+}
+
+#try-btn {
+    background-color: white;
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+}
+
+#try-btn:hover {
+    box-shadow: 0 0 5px #ffd5f0,
+        inset 0 0 5px #ffd5f0;
+}
+
+/* Header ends*/
+/* hero content starts*/
+.hero-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2em;
+    padding: 5em 0;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 900;
+}
+
+.hero-content p {
+    text-align: center;
+    width: 50%;
+}
+
+.hero-btn {
+    background-color: var(--main-color);
+    color: white;
+    box-shadow: 0px 4px 10px rgb(186, 186, 186);
+    padding: 1em 4em;
+}
+
+.hero-btn:hover {
+    box-shadow: 0px -4px 10px rgb(186, 186, 186);
+    background-color: #ff9ddb;
+    transform: translateY(-4px);
+}
+
+.hero-btn:active {
+    background-color: var(--main-color);
+}
+
+/* hero content ends*/
+/* hero banner starts*/
+.hero-banner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-banner img {
+    width: 70%;
+}
+
+/* hero banner ends*/
+/* Numerics starts*/
+#numerics {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5em;
+}
+
+.numeric img {
+    width: 30px;
+}
+
+.numeric h1 {
+    font-size: 5rem;
+    margin: 20px;
+    text-align: center;
+}
+
+.numeric p {
+    font-size: 1rem;
+    color: gray;
+    text-align: center;
+    font-family: ms sans serif;
+}
+
+/* Numerics ends*/
+/* Main ends*/
+
+/* Sectins starts  */
+#section-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 160px 0;
+    gap: 160px;
+}
+
+#section-container section:nth-child(odd) {
+    flex-direction: row-reverse;
+    background-color: #F6FBFF;
+}
+
+#section-container section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.section-bg {
+    width: 100%;
+    position: absolute;
+    left: 0;
+}
+
+.top-bg {
+    bottom: 100%;
+}
+
+.bottom-bg {
+    top: 100%;
+}
+
+.section-content,
+.section-img {
+    width: 50%;
+    padding: 5em;
+}
+
+.section-img img {
+    width: 100%;
+}
+
+.section-content h3 {
+    font-weight: 900;
+    margin-bottom: 1em;
+}
+
+/* Sections ends  */
+/* Footer msg starts  */
+#footer-msg {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2em;
+}
+
+#footer-msg h1 {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+/* Footer msg ends  */
+/* Footer starts  */
+footer {
+    width: 100%;
+    position: relative;
+    margin-top: 200px;
+    padding: 2em;
+    color: white;
+    background-color: #00252E;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-top-bg {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+}
+
+/* Footer about starts  */
+.footer-about {
+    width: 30%;
+    padding: 1em;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1em;
+    flex-direction: column;
+}
+
+.footer-about .logo {
+    width: 100%;
+}
+
+.footer-about .logo img {
+    height: 30px;
+    width: auto;
+}
+
+.footer-about p {
+    color: white;
+}
+
+.footer-about p i {
+    margin-right: 2em;
+}
+
+.social-links {
+    width: 100%;
+    display: flex;
+    gap: 1em;
+    margin-top: 5em;
+}
+
+.social-links i {
+    font-size: 3rem;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.social-links i:hover {
+    color: var(--main-color);
+}
+
+/* Footer about ends  */
+/* Newsletter starts  */
+.newsletter {
+    width: 50%;
+}
+
+
+.newsletter h6 {
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 1em;
+}
+
+.newsletter p {
+    color: white;
+}
+
+.newsletter form {
+    margin-top: 2em;
+}
+
+#email {
+    display: inline-block;
+    position: relative;
+}
+
+#email input {
+    width: 270px;
+    padding: 0.5em;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+    margin-right: 1em;
+}
+
+#email input:invalid {
+    color: red;
+}
+
+#email input:invalid+.msg {
+    display: inline;
+}
+
+.contact-btn {
+    padding: 0.5em 1em;
+    color: white;
+    font-size: 0.75rem;
+    background-color: var(--main-color);
+    border: 2px solid transparent;
+    cursor: pointer;
+    letter-spacing: 1px;
+    border-radius: 5px;
+}
+
+.contact-btn:hover {
+    background-color: #ff9ddb;
+}
+
+.contact-btn:active {
+    background-color: var(--main-color);
+}
+
+
+#email .msg {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 110%;
+    left: 0;
+    color: red;
+    font-size: 0.65rem;
+    letter-spacing: 1px;
+    font-weight: lighter;
+    font-family: ms sans serif;
+    padding-left: 1em;
+}
+
+
+/* Newsletter ends  */
+
+/* Footer ends  */
