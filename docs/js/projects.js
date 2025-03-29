@@ -83,7 +83,7 @@ const projects = [
         title: 'Car showcase',
         description: "A animated page that shows the detail of a car by animation.",
         image: 'images/projects/car_showing.png',
-        tags: ['HTML', 'CSS', 'JS'],
+        tags: ['HTML', 'CSS', 'JS', 'GSAPS'],
         github: 'https://github.com/dotHP-harshu/web_projects/',
         demo: 'https://dothp-harshu.github.io/web_projects/car_showcase/',
     },

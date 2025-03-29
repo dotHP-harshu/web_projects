@@ -1,0 +1,165 @@
+/* Header adjustment */
+
+
+nav {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: calc(100% + 20px);
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+    display: none;
+}
+
+
+.menu {
+    width: 100%;
+    margin: 0 3em;
+    background-color: white;
+    flex-direction: column;
+    padding: 2em 0;
+    position: relative;
+}
+
+.menu::after {
+    content: '';
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    bottom: 100%;
+    right: 0%;
+    background-color: white;
+    clip-path: polygon(100% 0, 100% 100%, 0 100%);
+}
+
+.menu li a {
+    color: black;
+}
+
+.menu li:hover {
+    background-color: rgb(255, 192, 105);
+}
+
+.nav-icons {
+    display: inline-block;
+    position: relative;
+}
+
+.nav-icons span {
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.nav-icons span:active i {
+    transform: rotate(90deg);
+}
+
+.nav-icons span i {
+    color: white;
+    font-size: 6vw;
+    transition: all 0.2s;
+}
+
+#close {
+    opacity: 0;
+}
+
+/* Header adjustment */
+/* Main adjustment  */
+main h1 {
+    top: 25%;
+}
+
+/* Main adjustment  */
+/* Featue adjustment  */
+.feature {
+    padding: 5vw;
+    height: auto;
+}
+
+.feature:nth-child(even) {
+    flex-direction: column-reverse;
+}
+
+.feature:nth-child(odd) {
+    flex-direction: column;
+}
+
+.feature-img,
+.feature-content {
+    width: 100%;
+    align-items: center;
+    margin: 5vw;
+}
+
+.feature-img {
+    min-height: 70vh;
+
+}
+
+.feature-img-content {
+    padding-top: 75vmin;
+}
+
+/* Featue adjustment  */
+/* Testemonial adjustment  */
+.testemonial-slide {
+    gap: 5em;
+}
+
+.client-msg p {
+    font-size: 3vw;
+    line-height: 5vw;
+}
+
+.client-intro p {
+    font-size: 4.5vw;
+}
+
+/* Testemonial adjustment  */
+/* Gallery adjustment  */
+#gallery {
+    height: auto;
+}
+
+.gallery-img-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    place-items: center;
+    gap: 5vw;
+}
+
+.gallery-img {
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+}
+
+/* Gallery adjustment  */
+/* Footer adjustment  */
+.footer-nav ul li a {
+    font-size: 4.5vw;
+}
+
+.footer-social i {
+    font-size: 4vw;
+}
+
+/* Footer adjustment  */
+
+.heading {
+    font-size: 6vw;
+}
+
+.para {
+    font-size: 3vw;
+    line-height: 3vw;
+}
+
+.more-btn {
+    font-size: 3vw;
+}
