@@ -1,6 +1,6 @@
 .hero {
     padding-top: 4rem;
-    background: linear-gradient(135deg, #FFF4E0 0%, #FFF4E0 100%);
+    background-color: var(--color-white-600);
 }
 
 .hero-content {
@@ -13,14 +13,14 @@
 .hero h1 {
     font-size: 2.25rem;
     font-weight: 700;
-    color: var(--color-gray-900);
+    color: var(--color-white-900);
     margin-bottom: 1rem;
     line-height: 1.2;
 }
 
 .hero p {
     font-size: 1.125rem;
-    color: var(--color-gray-600);
+    color: var(--color-white-800);
     margin-bottom: 1.5rem;
 }
 
@@ -45,10 +45,10 @@
 
     .hero-buttons {
         flex-direction: column;
+        align-items: center;
     }
 
     .hero-buttons .btn {
-        width: 100%;
         text-align: center;
     }
 }
