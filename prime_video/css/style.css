@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+
+header {
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    width: 100%;
+    height: 45px;
+    padding: 0 20px;
+}
+
+nav span {
+    margin: 0 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    ;
+}
+
+.search {
+    color: #ffffffa4;
+    cursor: pointer;
+}
+
+#logo {
+    text-decoration: none;
+}
+
+#logo img {
+    width: 100px;
+}
+
+.menu>ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+
+.menu>ul>li {
+    list-style-type: none;
+    cursor: pointer;
+    font-weight: 600;
+    position: relative;
+    transition: all 0.5s;
+    color: #ffffffa4;
+}
+
+.menu>ul>li:hover,
+.menu>ul>li:focus {
+    color: #fff;
+}
+
+.menu>ul>li:hover .dropdown {
+    transform: rotate(180deg);
+}
+
+.menu>ul>li:hover .submenu {
+    display: block;
+}
+
+.submenu>li:hover {
+    background-color: #fff;
+    color: black;
+}
+
+
+/* ------- submenu ---- */
+
+.submenu {
+    width: max-content;
+    position: absolute;
+    top: 100%;
+    z-index: 10;
+    background-color: black;
+    display: none;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    overflow: hidden;
+    transition: all 0.5s;
+    user-select: none;
+}
+
+.submenu>li {
+    list-style: none;
+    padding: 5px 10px;
+}
+
+.sm-menu {
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+.sm-submenu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    margin-top: 45px;
+    padding: 1em 3em;
+    background-color: black;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.sm-submenu li {
+    list-style: none;
+    padding: 10px 0;
+}
+
+
+/* ------- submenu ---- */
+
+
+/* --- Hero Starts here ----  */
+
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+
+.hero-1 {
+    background: url('../media/images/bg-1.webp') no-repeat right top/cover;
+}
+
+.hero-2 {
+    background: url('../media/images/bg-2.webp') no-repeat right top/cover;
+}
+
+.hero-content {
+    width: 40%;
+    height: 100%;
+    color: #fff;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    padding-left: 2em;
+    padding-top: 2em;
+    position: absolute;
+}
+
+.hero-content h3 {
+    font-size: 2.5rem;
+    margin: 30px 0;
+}
+
+.hero-content p {
+    margin: 30px 0;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+
+/* --- Hero Ends here ----  */
+
+
+/* ------- channel starts ------- */
+
+#channel {
+    width: 100%;
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+.ch-content {
+    width: 50%;
+    padding: 2em 3em;
+}
+
+.ch-content p:nth-child(1) {
+    font-size: 45px;
+    margin: 30px 0;
+    font-weight: 600;
+}
+
+.ch-content p:nth-child(2) {
+    line-height: 25px;
+    font-size: 22px;
+}
+
+.ch-images {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.ch-images>a>img {
+    width: 195px;
+    margin: 0 2px;
+}
+
+
+/* ------- channel ends ------- */
+
+
+/* ------- Footer Starts -------- */
+
+footer {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 0;
+    gap: 1em;
+}
+
+footer div {
+    flex-direction: column;
+    text-align: center;
+    display: flex;
+    gap: 1em;
+}
+
+footer div a {
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-logo{
+    width: 10rem;
+}
+
+.copyright {
+    color: #ffffff9f;
+    font-weight: 400;
+}
+
+
+/* ------- Footer Ends -------- */
+
+
+/* ---------------------------------- */
+
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.blue-btn {
+    width: auto;
+    color: #fff;
+    padding: 13px 60px;
+    background-color: #337BA6;
+    border: none;
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.block {
+    display: block;
+}
+
+
+/* Responsive Styles */
