@@ -1,19 +1,12 @@
 const projects = [
+   
     {
-        title: 'Netflix',
-        description: "A clone of the popular Netflix platform using HTML, CSS, and JavaScript.",
-        image: 'images/projects/netflix.png',
-        tags: ['HTML', 'CSS', 'JS'],
-        github: 'https://github.com/dotHP-harshu/web_projects/',
-        demo: 'https://dothp-harshu.github.io/web_projects/netflix/',
-    },
-    {
-        title: 'Prime Video',
-        description: "A replica of Amazon's Prime Video interface built with HTML, CSS, and JavaScript.",
-        image: 'images/projects/prime_video.png',
-        tags: ['HTML', 'CSS', 'JS'],
+        title: 'Stella Portfolio site',
+        description: "A simple portfolio site with some animation ",
+        image: 'images/projects/stella_portfolio.png',
+        tags: ['HTML', 'CSS', 'JS', 'GSAP'],
         github: 'https://github.com/dotHP-harshu/web_projects',
-        demo: 'https://dothp-harshu.github.io/web_projects/prime_video/',
+        demo: 'https://dothp-harshu.github.io/web_projects/stella_portfolio/',
     },
     {
         title: 'Sunnyside',
@@ -22,6 +15,14 @@ const projects = [
         tags: ['HTML', 'CSS', 'JS'],
         github: 'https://github.com/dotHP-harshu/web_projects',
         demo: 'https://dothp-harshu.github.io/web_projects/Sunnyside/',
+    },
+    {
+        title: 'Bookmark',
+        description: "A simple and clean bookmark management interface.",
+        image: 'images/projects/bookmark.png',
+        tags: ['HTML', 'CSS', 'JS'],
+        github: 'https://github.com/dotHP-harshu/web_projects/',
+        demo: 'https://dothp-harshu.github.io/web_projects/bookmark/',
     },
     {
         title: 'Eduwave',
@@ -40,28 +41,12 @@ const projects = [
         demo: 'https://dothp-harshu.github.io/web_projects/room/',
     },
     {
-        title: 'Bookmark',
-        description: "A simple and clean bookmark management interface.",
-        image: 'images/projects/bookmark.png',
-        tags: ['HTML', 'CSS', 'JS'],
-        github: 'https://github.com/dotHP-harshu/web_projects/',
-        demo: 'https://dothp-harshu.github.io/web_projects/bookmark/',
-    },
-    {
         title: 'Loopstudio',
         description: "A sleek and minimalistic studio portfolio website.",
         image: 'images/projects/loopstudio.png',
         tags: ['HTML', 'CSS', 'JS'],
         github: 'https://github.com/dotHP-harshu/web_projects/',
         demo: 'https://dothp-harshu.github.io/web_projects/loopstudio/',
-    },
-    {
-        title: 'Blog Card',
-        description: "A blog card is made by Css .",
-        image: 'images/projects/blog_card.png',
-        tags: ['HTML', 'CSS', 'JS'],
-        github: 'https://github.com/dotHP-harshu/web_projects/',
-        demo: 'https://dothp-harshu.github.io/web_projects/blog_card/',
     },
     {
         title: 'Echoshop',
@@ -72,6 +57,14 @@ const projects = [
         demo: 'https://dothp-harshu.github.io/web_projects/Ecoshop/',
     },
     {
+        title: 'Blog Card',
+        description: "A blog card is made by Css .",
+        image: 'images/projects/blog_card.png',
+        tags: ['HTML', 'CSS', 'JS'],
+        github: 'https://github.com/dotHP-harshu/web_projects/',
+        demo: 'https://dothp-harshu.github.io/web_projects/blog_card/',
+    },
+    {
         title: 'Grid',
         description: "Grid of different cards. ",
         image: 'images/projects/grid_main.png',
@@ -80,12 +73,28 @@ const projects = [
         demo: 'https://dothp-harshu.github.io/web_projects/grid_main/',
     },
     {
-        title: 'Car showcase',
-        description: "A animated page that shows the detail of a car by animation.",
-        image: 'images/projects/car_showing.png',
-        tags: ['HTML', 'CSS', 'JS', 'GSAPS'],
+        title: 'Huddle',
+        description: "A clean and simple landing page. ",
+        image: 'images/projects/huddle.png',
+        tags: ['HTML', 'CSS', 'JS'],
         github: 'https://github.com/dotHP-harshu/web_projects/',
-        demo: 'https://dothp-harshu.github.io/web_projects/car_showcase/',
+        demo: 'https://dothp-harshu.github.io/web_projects/huddle/',
+    },
+    {
+        title: 'Netflix',
+        description: "A clone of the popular Netflix platform using HTML, CSS, and JavaScript.",
+        image: 'images/projects/netflix.png',
+        tags: ['HTML', 'CSS', 'JS'],
+        github: 'https://github.com/dotHP-harshu/web_projects/',
+        demo: 'https://dothp-harshu.github.io/web_projects/netflix/',
+    },
+    {
+        title: 'Prime Video',
+        description: "A replica of Amazon's Prime Video interface built with HTML, CSS, and JavaScript.",
+        image: 'images/projects/prime_video.png',
+        tags: ['HTML', 'CSS', 'JS'],
+        github: 'https://github.com/dotHP-harshu/web_projects',
+        demo: 'https://dothp-harshu.github.io/web_projects/prime_video/',
     },
 
 ];

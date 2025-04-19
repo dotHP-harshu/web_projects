@@ -1,6 +1,10 @@
 .hero {
+    min-height: 100vh;
     padding-top: 4rem;
     background-color: var(--color-white-600);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero-content {

@@ -16,8 +16,9 @@
 body {
     font-family: system-ui, -apple-system, sans-serif;
     line-height: 1.5;
-    background-color: var(--color-white-50);
+    background-color: var(--color-white-600);
     color: var(--color-white-900);
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -28,6 +29,9 @@ body {
 }
 
 .btn {
+    outline: none;
+    border:none;
+    cursor: pointer;
     display: inline-block;
     padding: 0.75rem 1.5rem;
     border-radius: 0.5rem;
