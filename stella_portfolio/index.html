@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<!-- Created by Harsh Prajapati -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stella Portfolio</title>
+    <link rel="stylesheet" href="assets/stylesheets/output.css">
+    <link rel="stylesheet" href="assets/stylesheets/style.css">
+</head>
+
+<body class="text-[var(--text-color)] overflow-x-hidden">
+    
+     <!-- ========================= Header section starts here =========================  -->
+      <header id="header" class="w-full flex items-center px-6 py-4 fixed top-0 left-0 z-50 max-tablet:text-[var(--text-color)] max-tablet:justify-between" style="color: white;">
+
+        <div class="logo w-1/2">
+            <h1 class="text-2xl text-[var(--primary-color)] font-semibold">Portfolio.</h1>
+        </div>
+
+        <div class="menu-icons h-12 w-12 hidden relative max-tablet:inline-block">
+            <img class="w-6 h-6 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 "  id="menu-icon" src="assets/images/menu.svg" alt="menu">
+            <img class="w-10 h-10 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 " style="display: none;" id="cross-icon" src="assets/images/cross.png" alt="cross">
+        </div>
+        <ul id="menu" class="menu flex items-center gap-6 w-1/2 justify-end max-tablet:hidden">
+            <li><a href="#home" class="menu-links">home</a></li>
+            <li><a href="#about" class="menu-links">about</a></li>
+            <li><a href="#services" class="menu-links">services</a></li>
+            <li><a href="#portfolio" class="menu-links">portfolio</a></li>
+            <li><a href="#contact" class="menu-links">contact</a></li>
+        </ul>
+        
+      </header>
+     <!-- ========================= Header section ends here =========================  -->
+
+
+     <!-- ========================= Home section starts here =========================  -->
+      <section id="home" class="min-h-screen w-full h-auto flex px-6 overflow-hidden  max-tablet:items-center max-tablet:justify-center   ">
+
+        <div class="left-home w-1/2 pr-6 flex flex-col items-start gap-4 justify-center max-tablet:w-full max-tablet:items-center" >
+            <div class="overflow-hidden py-8">
+                <h1 class="text-2xl font-bold  max-tablet:text-center">Hello, I am  <span class="block text-5xl font-extrabold">Coding Stella</span> </h1>
+            </div>
+            <p class="text-base w-3/4 max-tablet:text-center">I'm a web developer who loves to create beautiful and functional websites for people who want to make a difference in the world.</p>
+            <p class="text-base w-3/4 max-tablet:text-center">Currently I'm a student of The Jump Digital School, where I'm learning how to create beautiful and functional websites using HTML, CSS, JavaScript, and WordPress.</p>
+            <button class="button">download CV</button>
+        </div>
+
+        <div class="right-home w-1/2 flex justify-end items-end overflow-hidden max-tablet:w-full max-tablet:hidden">
+            <div class="overlay border-[50vh] border-[var(--primary-color)] border-l-[transparent] absolute top-0 right-0 z-10 "></div>
+            <img src="assets/images/home.png" alt="home" class=" w-3/5 h-auto z-20 ">
+        </div>
+
+        <div class="circle-container h-full w-1/2 absolute top-0 right-0 flex z-[-1] overflow-hidden max-tablet:hidden" >
+            <div class=" h-96 w-96 absolute top-1/2 right-0 -translate-x-1/2 -translate-y-1/2 " >
+                <div class="circle w-full h-full rounded-full border-4 border-[var(--primary-color)]">
+                    <div class="professions top-1/2 left-0">web developer</div>
+                    <div class="professions top-full left-1/2 -rotate-90">web designer</div>
+                    <div class="professions top-1/2 left-full -rotate-180">photographer</div>
+                    <div class="professions top-0 left-1/2 rotate-90">videographer</div>
+                </div>
+            </div>
+        </div>
+        
+      </section>
+     <!-- ========================= Home section ends here =========================  -->
+
+
+     <!-- ========================= About section starts here =========================  -->
+      <section id="about" class="min-h-screen w-full flex px-6  overflow-x-hidden max-tablet:flex-col ">
+        <div class="left-about w-1/2 flex items-center justify-center max-tablet:w-full overflow-hidden">
+            <img src="assets/images/about.png" alt="about" class="w-3/4 h-auto object-cover object-center">
+        </div>
+        <div class="right-about w-1/2 flex gap-4 flex-col items-start justify-center max-tablet:w-full max-tablet:items-center">
+            <div class="overflow-hidden">
+                <h1 class="text-2xl font-bold">About me</h1>
+            </div>
+            <p class="text-base w-3/4 font-semibold">Hi there, welcome to my website! I'm Cristian, a passionate web developer who enjoys learning new technologies and solving problems with code!</p>
+            <p class="text-base w-3/4">This website is my personal blog where I write about web development topics that interest me and inspire me.</p>
+            <p class="text-base w-3/4">Thank you for visiting my website and getting to know me better. I hope you enjoyed reading my blog posts and found them useful and informative. If you want to read more of my posts, subscribe to my newsletter where I send weekly updates on web development trends and tips. If you have any feedback or suggestions, please let me know. I'd love to hear from you.</p>
+            <button class="button">read more</button>
+        </div>
+
+      </section>
+     <!-- ========================= About section ends here =========================  -->
+      
+
+     <!-- ========================= Services section starts here =========================  -->
+      <section id="services" class="min-h-screen w-full px-6  overflow-x-hidden flex justify-evenly items-center flex-col py-10 gap-8">
+        <div class="heading">
+            <h1 class="text-2xl font-bold text-center">My services</h1>
+        </div>
+        <div class="w-full services-container flex items-center justify-evenly flex-wrap gap-4 max-tablet:flex-col ">
+            <!-- ------- service cards --------  -->
+            <div class="service-card" >
+                <h1 class="service-heading text-lg font-semibold capitalize">web development</h1>
+                
+                <p class="service-para text-center text-base ">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi itaque similique, architecto eaque ut quas delectus pariatur nesciunt in eligendi mollitia dicta.
+                </p>
+                
+                <button class="button">read more</button>
+            </div>
+            <!-- ------- service cards --------  -->
+
+            <!-- ------- service cards --------  -->
+            <div class="service-card" >
+                <h1 class="service-heading text-lg font-semibold capitalize">Graphic Design</h1>
+                
+                <p class="service-para text-center text-base ">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi itaque similique, architecto eaque ut quas delectus pariatur nesciunt in eligendi mollitia dicta.
+                </p>
+                
+                <button class="button">read more</button>
+            </div>
+            <!-- ------- service cards --------  -->
+
+            <!-- ------- service cards --------  -->
+            <div class="service-card" >
+                <h1 class="service-heading text-lg font-semibold capitalize">Digital Marketing</h1>
+                
+                <p class="service-para text-center text-base ">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi itaque similique, architecto eaque ut quas delectus pariatur nesciunt in eligendi mollitia dicta.
+                </p>
+                
+                <button class="button">read more</button>
+            </div>
+            <!-- ------- service cards --------  -->
+        </div>
+      </section>
+     <!-- ========================= Services section ends here =========================  -->
+
+      
+     <!-- ========================= Projects section starts here =========================  -->
+     <section id="services" class="min-h-screen w-full px-6  overflow-x-hidden flex justify-evenly items-center flex-col py-10 gap-8">
+
+        <div class="heading">
+            <h1 class="text-2xl font-bold text-center">My <span class="text-[var(--primary-color)]">Projects</span></h1>
+        </div>
+
+        <div class="project-container flex justify-center items-center gap-10 flex-wrap">
+            <!-- ------ Projects -------  -->
+             <div class="project-card ">
+                <div class="project-img overflow-hidden w-96 max-w-96 h-64 max-h-64  ">
+                    <img src="assets/images/portfolio1.jpg" alt="portfolio1" class="w-full h-auto object-cover object-center duration-500 transition-all">
+                </div>
+                <div class="project-content" >
+                    <h1 class="project-heading text-2xl font-bold capitalize">web development</h1>
+                
+                    <p class="poject-para text-center text-base ">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                    </p>
+                </div>
+             </div>
+            <!-- ------ Projects -------  -->
+             
+            <!-- ------ Projects -------  -->
+             <div class="project-card ">
+                <div class="project-img overflow-hidden w-96 max-w-96 h-64 max-h-64  ">
+                    <img src="assets/images/portfolio2.jpg" alt="portfolio1" class="w-full h-auto object-cover object-center duration-500 transition-all">
+                </div>
+                <div class="project-content" >
+                    <h1 class="project-heading text-2xl font-bold capitalize">web development</h1>
+                
+                    <p class="poject-para text-center text-base ">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                    </p>
+                </div>
+             </div>
+            <!-- ------ Projects -------  -->
+            <!-- ------ Projects -------  -->
+             <div class="project-card ">
+                <div class="project-img overflow-hidden w-96 max-w-96 h-64 max-h-64  ">
+                    <img src="assets/images/portfolio3.jpg" alt="portfolio1" class="w-full h-auto object-cover object-center duration-500 transition-all">
+                </div>
+                <div class="project-content" >
+                    <h1 class="project-heading text-2xl font-bold capitalize">web development</h1>
+                
+                    <p class="poject-para text-center text-base ">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                    </p>
+                </div>
+             </div>
+            <!-- ------ Projects -------  -->
+            <!-- ------ Projects -------  -->
+             <div class="project-card ">
+                <div class="project-img overflow-hidden w-96 max-w-96 h-64 max-h-64  ">
+                    <img src="assets/images/portfolio4.jpg" alt="portfolio1" class="w-full h-auto object-cover object-center duration-500 transition-all">
+                </div>
+                <div class="project-content" >
+                    <h1 class="project-heading text-2xl font-bold capitalize">web development</h1>
+                
+                    <p class="poject-para text-center text-base ">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                    </p>
+                </div>
+             </div>
+            <!-- ------ Projects -------  -->
+            <!-- ------ Projects -------  -->
+             <div class="project-card ">
+                <div class="project-img overflow-hidden w-96 max-w-96 h-64 max-h-64  ">
+                    <img src="assets/images/portfolio5.jpg" alt="portfolio1" class="w-full h-auto object-cover object-center duration-500 transition-all">
+                </div>
+                <div class="project-content" >
+                    <h1 class="project-heading text-2xl font-bold capitalize">web development</h1>
+                
+                    <p class="poject-para text-center text-base ">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                    </p>
+                </div>
+             </div>
+            <!-- ------ Projects -------  -->
+            <!-- ------ Projects -------  -->
+             <div class="project-card ">
+                <div class="project-img overflow-hidden w-96 max-w-96 h-64 max-h-64  ">
+                    <img src="assets/images/portfolio6.jpg" alt="portfolio1" class="w-full h-auto object-cover object-center duration-500 transition-all">
+                </div>
+                <div class="project-content" >
+                    <h1 class="project-heading text-2xl font-bold capitalize">web development</h1>
+                
+                    <p class="poject-para text-center text-base ">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                    </p>
+                </div>
+             </div>
+            <!-- ------ Projects -------  -->
+
+        </div>
+
+     </section>
+
+     <!-- ========================= Projects section ends here =========================  -->
+
+      
+     <!-- ========================= Testemonial section starts here =========================  -->
+      <section class="min-h-screen w-full px-6 overlfow-x-hidden flex items-center justify-evenly flex-col py-10 gap-8" id="testemonials">
+        <div class="heading">
+            <h1 class="text-2xl font-bold text-center">Valuable <span class="text-[var(--primary-color)]">Testemonials</span></h1>
+        </div>
+
+        <div id="testemonial-container" class="w-full  flex justify-evenly items-center flex-wrap gap-4">
+            <!-- Testemonials  -->
+             <div class="testemonial-card ">
+                <div class="testemonial-card-img">
+                    <img src="assets/images/testimonial1.jpg" alt="testemonial-card" class="h-full w-auto object-center object-cover rounded-full">
+                </div>
+                <div class="testemonial-card-content ">
+                    <h3 class="name text-lg font-semibold text-center">Jackson Levi</h3>
+                    <p class="testemonial-msg text-center text-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere possimus voluptas, ad, sequi nulla minima porro cupiditate adipisci dignissimos nihil sapiente reprehenderit iure? Facere possimus assumenda similique, non officiis nobis?</p>
+                </div>
+             </div>
+            <!-- Testemonials  -->
+            <!-- Testemonials  -->
+             <div class="testemonial-card ">
+                <div class="testemonial-card-img ">
+                    <img src="assets/images/testimonial2.jpg" alt="testemonial-card" class="h-full w-auto object-center object-cover rounded-full">
+                </div>
+                <div class="testemonial-card-content ">
+                    <h3 class="name text-lg font-semibold text-center">Flora Ocean</h3>
+                    <p class="testemonial-msg text-center text-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere possimus voluptas, ad, sequi nulla minima porro cupiditate adipisci dignissimos nihil sapiente reprehenderit iure? Facere possimus assumenda similique, non officiis nobis?</p>
+                </div>
+             </div>
+            <!-- Testemonials  -->
+            <!-- Testemonials  -->
+             <div class="testemonial-card">
+                <div class="testemonial-card-img ">
+                    <img src="assets/images/testimonial3.jpg" alt="testemonial-card" class="h-full w-auto object-center object-cover rounded-full">
+                </div>
+                <div class="testemonial-card-content ">
+                    <h3 class="name text-lg font-semibold text-center">Julian Grayson</h3>
+                    <p class="testemonial-msg text-center text-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere possimus voluptas, ad, sequi nulla minima porro cupiditate adipisci dignissimos nihil sapiente reprehenderit iure? Facere possimus assumenda similique, non officiis nobis?</p>
+                </div>
+             </div>
+            <!-- Testemonials  -->
+
+        </div>
+      </section>
+     <!-- ========================= Testemonial section ends here =========================  -->
+
+      
+     <!-- ========================= Contact section starts here =========================  -->
+      <section id="contact" class="min-h-screen w-full overflow-x-hidden flex items-center flex-col justify-evenly">
+
+        <div class="heading">
+            <h1 class="text-2xl font-bold text-center">Contact <span class="text-[var(--primary-color)]">me!</span></h1>
+        </div>
+
+        <form class="w-3/4 flex gap-4 flex-col items-center"  action="">
+            <div class="w-full flex gap-4 max-mobile:flex-col">
+                <input class="w-1/2 px-4 py-2 rounded-md shadow-md border-none outline-none max-mobile:w-full " type="text" name="name" placeholder="Full Name">
+                <input class="w-1/2 px-4 py-2 rounded-md shadow-md border-none outline-none  max-mobile:w-full " type="email" name="email" placeholder="Email Address">
+            </div>
+            <div class="w-full flex gap-4 max-mobile:flex-col">
+            <input class="w-1/2 px-4 py-2 rounded-md shadow-md border-none outline-none  max-mobile:w-full " type="text" name="email-subject" placeholder="Email Subject">
+            <input class="w-1/2 px-4 py-2 rounded-md shadow-md border-none outline-none  max-mobile:w-full " type="number" name="mobile" placeholder="Mobile Number">
+            </div>
+            <textarea class="w-full h-40 resize-none px-4 py-2 rounded-md shadow-md border-none outline-none inline-block " name="message" placeholder="Your Message"></textarea>
+            <button type="submit" class="button " > Send Your Message</button>
+        </form>
+
+      </section>
+     <!-- ========================= Contact section end here =========================  -->
+     
+     
+     <!-- ========================= Footer starts here =========================  -->
+      <footer class=" w-full bg-[var(--primary-color)] px-6 py-4 flex items-center justify-evenly text-white " >
+        <div class="footer-content">
+            <h1 class="text-lg ">Copyrights &copy; 2025 | All right reserved</h1>
+        </div>
+      </footer>
+     <!-- ========================= Footer ends here =========================  -->
+
+
+     <!-- ------- Scripts --------  -->
+      <script src="assets/GSAP/gsap.min.js"></script>
+      <script src="assets/GSAP/ScrollTrigger.min.js"></script>
+      <script src="assets/GSAP/TextPlugin.min.js"></script>
+      <script src="assets/javascripts/script.js"></script>
+      <script src="assets/javascripts/animation.js"></script>
+     <!-- ------- Scripts --------  -->
+
+</body>
+
+</html>

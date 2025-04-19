@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.menu-links{
+    @apply text-lg py-2 capitalize;
+}
+
+.button{
+    @apply   px-6 py-3 rounded-lg bg-[var(--primary-color)] text-white capitalize font-bold tracking-wide cursor-pointer hover:text-[var(--primary-color)] border-2 border-[var(--primary-color)] hover:bg-white transition-all duration-500;
+}
+.professions{
+    @apply absolute  -translate-x-1/2 -translate-y-1/2 bg-white p-4 text-xl font-semibold text-[var(--primary-color)] capitalize;
+}
+.service-card{
+    @apply flex max-w-80 flex-col items-center justify-center gap-4 border-y-[10px] border-[var(--primary-color)] rounded-lg p-6 hover:scale-105 transition-all cursor-pointer hover:shadow-2xl ;
+}
+.project-content{
+    @apply opacity-0 duration-500 transition-all bg-gradient-to-t from-[var(--primary-color)] h-full w-full absolute top-0 left-0 flex flex-col items-center justify-evenly text-white p-4 ;
+}
+.project-card{
+    @apply relative rounded-xl overflow-hidden hover:shadow-2xl;
+}
+.testemonial-card{
+    @apply flex justify-center items-center flex-col max-w-96 p-4 border-y-8 border-[var(--primary-color)] rounded-xl hover:scale-110 transition-transform duration-500 hover:shadow-2xl;
+}
+.testemonial-card-img{
+    @apply h-36 w-36 p-1 overflow-hidden rounded-full border-4 border-[var(--primary-color)];
+}
