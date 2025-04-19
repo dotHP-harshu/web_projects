@@ -1,0 +1,490 @@
+:root {
+  --primary-color: #e50914;
+}
+
+@font-face {
+  src: url(../assets/fonts/NetflixSans_W_Rg.woff2);
+  font-family: netflix-rg-font;
+}
+
+@font-face {
+  src: url(../assets/fonts/NetflixSans_W_Md.woff2);
+  font-family: netflix-md-font;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+}
+
+#preloader {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.blur-out-contract {
+  color: white;
+  -webkit-animation: blur-out-contract 3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  animation: blur-out-contract 3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  animation-iteration-count: infinite;
+  font: 5rem netflix-md-font;
+  font-weight: 900;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.blur-out-contract:nth-child(1) {
+  font: 2rem netflix-md-font;
+  font-weight: 700;
+}
+
+@keyframes blur-out-contract {
+  0% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-filter: blur(0.01);
+    filter: blur(0.01);
+  }
+
+  50% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-500px);
+    transform: translateZ(-500px);
+    -webkit-filter: blur(12px) opacity(0%);
+    filter: blur(12px) opacity(0%);
+  }
+
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-filter: blur(0.01);
+    filter: blur(0.01);
+  }
+
+}
+
+
+.main {
+  height: 80vh;
+  width: 100%;
+  background: url("../assets/img/main-bg.jpg");
+  background-size: max(1000px, 100vw);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.backgorund {
+  background: linear-gradient(180deg,
+      rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, 0.45),
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.45),
+      rgba(0, 0, 0, 1));
+  width: 100%;
+  height: 80vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.box nav {
+  height: 20%;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+
+.box nav .logo {
+  height: 100%;
+  width: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box nav .logo img {
+  width: 100px;
+}
+
+.box nav .nav-options {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box nav .nav-options button,
+.language {
+
+  padding: 0.25rem 0.5rem;
+  margin: 0 10px;
+  color: white;
+  font-family: netflix-rg-font;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
+
+.language {
+  border: 2.5px solid rgba(255, 255, 255, 0.7);
+  background: transparent;
+}
+
+.language option {
+  color: black;
+}
+
+
+.box nav .nav-options button {
+  background-color: var(--primary-color);
+  border: none;
+}
+
+/* NAV COMPLETED  */
+/* CONTENT BOX STARTED */
+
+.box-content {
+  min-height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.box-content h3,
+.box-content p {
+  color: white;
+  font-family: netflix-rg-font;
+  text-align: center;
+}
+
+.box-content h3 {
+  font-size: 2rem;
+  font-weight: 900;
+  font-family: netflix-md-font;
+}
+
+.box-content p:nth-child(3) {
+  font-size: 0.75rem;
+}
+
+.box-content form,
+#faq-section form {
+  gap: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.box-content form input,
+#faq-section form input {
+  width: 280px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-family: netflix-rg-font;
+  border: 1px solid gainsboro;
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+}
+
+.box-content form button,
+#faq-section form button {
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  font-family: netflix-rg-font;
+  font-weight: 200;
+  background-color: var(--primary-color);
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/* CONTENT BOX COMPLETED */
+
+/* MAIN SECTION COMPLETED  */
+
+#feature {
+  border: 1px solid green;
+  width: 100%;
+  height: auto;
+}
+
+.feature-container {
+  width: 100%;
+  height: 60vh;
+  background-color: black;
+}
+
+.second .feature {
+  flex-direction: row-reverse;
+}
+
+.feature {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.feature-content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+}
+
+.feature-content h3,
+.feature-content p {
+  color: white;
+}
+
+.feature-content h3 {
+  font: 1.75rem netflix-md-font;
+  font-weight: 800;
+}
+
+.feature-content p {
+  font: 1em netflix-rg-font;
+}
+
+.feature-visual {
+  width: 50%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  position: relative;
+}
+
+.second .feature-visual>div {
+  background-color: black;
+  border-radius: 10px;
+  border: 2.5px solid white;
+  height: 65px;
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  bottom: -5%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 9px;
+  z-index: 10;
+}
+
+.second .feature-visual>div img:first-child {
+  height: 100%;
+  width: auto;
+}
+
+.second .feature-visual>div span {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.second .feature-visual>div span p {
+  font-family: netflix-rg-font;
+}
+
+.second .feature-visual>div span p:nth-child(1) {
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+}
+
+.second .feature-visual>div span p:nth-child(2) {
+  font-size: 12px;
+  font-weight: 500;
+  color: #0071eb;
+}
+
+
+.second .feature-visual>div img:nth-child(3) {
+  width: 40px;
+}
+
+.feature-visual img {
+  z-index: 9;
+  width: 100%;
+  position: relative;
+}
+
+.feature-visual video {
+  position: absolute;
+  top: 49%;
+  left: 52px;
+  transform: translateY(-50%);
+  width: 305px;
+  opacity: 0.8;
+  z-index: 2;
+}
+
+.third .feature .feature-visual video {
+  top: 33%;
+  left: 19%;
+  width: 16em;
+}
+
+/* FEATURES ENDS HERE  */
+
+/* FAQ SECTION STARTS HERE  */
+#faq-section {
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 1rem 0;
+}
+
+#faq-section>span {
+  display: block;
+  text-align: center;
+  margin: 1rem;
+  font: 13px netflix-rg-font;
+}
+
+#faq-section h3 {
+  text-align: center;
+  font: 3rem netflix-md-font;
+  font-weight: 900;
+}
+
+.faq-container {
+  width: 70%;
+  margin: 1rem auto;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.faq {
+  width: 100%;
+  background-color: green;
+  font-family: netflix-rg-font;
+  font-size: 16px;
+  font-weight: 100;
+  background: rgb(45, 45, 45);
+  color: rgb(255, 255, 255);
+  transition: all 0.5;
+}
+
+.question {
+  user-select: none;
+  cursor: pointer;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.question .icon {
+  transform: rotate(0deg);
+}
+
+
+.question span:nth-child(1) {
+  width: 90%;
+}
+
+.answer {
+  display: none;
+  padding: 1rem;
+  border-top: 1px solid black;
+}
+
+/* FAQ ENDS HERE ------  */
+/* FOOTER STARTS HERE -------- */
+footer {
+  width: 100%;
+  background-color: black;
+  padding: 3rem 15rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: netflix-rg-font;
+}
+
+footer p {
+  font-size: 10px;
+  margin-bottom: 1rem;
+}
+
+footer p a {
+  color: inherit;
+
+}
+
+.footer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.footerParts {
+  width: 25%;
+  height: 100%;
+  border-color: greenyellow;
+}
+
+.footerParts p {
+  font-size: 10px;
+  margin-bottom: 1rem;
+}
+
+.footerParts p a {
+  color: inherit;
+
+}
+
+footer select {
+  border: 2.5px solid rgba(255, 255, 255, 0.7) !important;
+  background: transparent !important;
+  border-radius: 5px !important;
+  margin: 10px 0 !important;
+}
+
+/* FOOTER ENDS HERE -------- */
+
+/* ---------------------------- */
+
+
+.seperator {
+  height: 5px;
+  width: 100%;
+  background-color: gray;
+}

@@ -1,0 +1,74 @@
+@media (max-width : 768px) {
+    .feature {
+        width: 90%;
+    }
+
+    .third .feature .feature-visual video {
+        width: 13em;
+    }
+
+    #faq-section h3 {
+        font-size: 2rem;
+    }
+
+    footer {
+        padding: 2rem;
+    }
+
+    .footer {
+        flex-wrap: wrap;
+    }
+
+    .footerParts {
+        width: 50%;
+    }
+}
+
+
+@media (max-width:425px) {
+    .box nav .logo {
+        width: 40%;
+    }
+
+    .box nav .nav-options {
+        width: 60%;
+    }
+
+    .box nav .nav-options button,
+    .language {
+        margin: 0;
+    }
+
+    .box nav .nav-options {
+        justify-content: space-around;
+    }
+
+    .box-content {
+        padding: 1.5rem;
+    }
+
+    .box-content form,
+    #faq-section form {
+        flex-direction: column;
+    }
+
+    .feature-container {
+        min-height: 60vh;
+        height: 100%;
+        padding: 3rem 0;
+    }
+
+    .feature {
+        flex-direction: column !important;
+        text-align: center;
+    }
+
+    .feature-content,
+    .feature-visual {
+        width: 100%;
+    }
+
+    .second .feature-visual>div {
+        bottom: 0;
+    }
+}
